@@ -250,4 +250,117 @@
 }
 
 
+@media screen and (min-width: 600px) and (max-width: 1000px) {
+  @mixin flexCenter($direction) {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: $direction;
+}
+
+  #main {
+  background-image: url('../assets/ipadbagg.png');
+  height: 935px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: -70px 0 0 -10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 110%;
+}
+
+#text_box {
+  width: 100%;
+  height: 530px;
+  display:flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
+}
+
+#head_front {
+  font-size: 112px;
+}
+
+#text1 p {
+  padding-top: 30px;
+}
+
+#animation_box {
+  width: 100%;
+  height: 400px;
+  @include flexCenter(row);
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+#co1, #co2 {
+  width: 40%;
+  display: flex;
+  align-items: flex-start;
+  height: 50px;
+}
+
+#co1 {
+  margin-left: 30px;
+  margin-top: -170px;
+}
+
+#co2 {
+  padding-top: 0px;
+  margin-top: -80px;
+  margin-right: -60px;
+  width: 100px;
+}
+
+#co3 {
+  width: 100%;
+  padding: 0 50px 50px 0;
+  height: 100px;
+}
+
+#co1 img {
+  height: 30px;
+  -webkit-animation: scale-up-center 2s ease-in-out infinite alternate both; animation: scale-up-center 2s ease-in-out infinite alternate both;
+}
+
+#co2 img {
+  height: 50px;
+  -webkit-animation: scale-up-center 3s ease-in-out infinite alternate both; animation: scale-up-center 3s ease-in-out infinite alternate both;
+}
+
+#co3 img {
+  height: 40px;
+  -webkit-animation: scale-up-center 2.5s ease-in-out infinite alternate both; animation: scale-up-center 2.5s ease-in-out infinite alternate both;
+}
+
+#quote {
+  font-style: italic;
+}
+
+
+@-webkit-keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+}
+
+
 </style>

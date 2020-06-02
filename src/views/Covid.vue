@@ -35,8 +35,8 @@
             <h1>INFOMERCIAL</h1>
         </div>
         <div id="video">
-            <iframe width="80%" height="560"
-                src="https://www.youtube.com/embed/QERZQ_L0AqM">
+            <iframe width="80%" height="580"
+                src="https://youtube.com/embed/hSdB-uglnLY">
             </iframe>
         </div>
     </div>
@@ -87,9 +87,10 @@ main {
     justify-content: center;
     align-items: center;
     padding-right: 0px;
-    background-image: url("../assets/bobler.svg");
+    background-image: url("../assets/boblerdesk.png");
     background-repeat: no-repeat;
     background-position: center;
+    background-size: contain;
 }
 
 
@@ -177,7 +178,7 @@ main {
 @media screen and (max-width: 600px) {
 
 main {
-    height: 2800px;
+    height: 2700px;
     display: flex;
     flex-wrap: wrap;
     background-color: #D5EDF7;
@@ -245,7 +246,7 @@ main {
 
 #facts {
     width: 85%;
-    height: 500px;
+    height: 420px;
 }
 
 #text {
@@ -268,7 +269,7 @@ main {
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
-    height: 530px;
+    height: 550px;
     width: 100%;
 }
 
@@ -286,6 +287,119 @@ iframe {
     width: 90%;
 }
 
+}
+
+@media screen and (min-width: 600px) and (max-width: 1000px) {
+
+main {
+    height: 3300px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #D5EDF7;
+    margin: -115px -10px -10px -10px;
+    justify-content: center;
+}
+
+#topline {
+    height: 100px;
+    width: 100%;
+}
+
+#topbox {
+    height: 70px;
+    width: 100%;
+    padding-top: 0px;
+}
+
+#header h3 {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: lighter;
+    font-size: 26.5px;
+    margin: 0;
+    color: #a11d2c;
+}
+
+#header h1 {
+    margin-top: -10px;
+    font-size: 60px;
+}
+
+#plakat {
+    height: 750px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 0px;
+    background-image: url("../assets/boblerdesk.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+
+#bobler {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -50px;
+}
+
+#bob {
+    position: absolute;
+    height: 350px;
+    
+}
+
+#bak {
+    position: absolute;
+    height: 210px;
+    -webkit-animation: scale-up-center 2.5s ease-in-out infinite alternate both; animation: scale-up-center 2.5s ease-in-out infinite alternate both;
+}
+
+#facts {
+    width: 85%;
+    height: 620px;
+}
+
+#text {
+    text-align: justify;
+    line-height: 1.6;
+    padding-top: 20px;
+}
+
+#piechart {
+    height: 550px;
+    width: 90%;
+}
+
+#header_pie {
+    margin-bottom: 30px;
+}
+
+#piechartt {
+    background-image: url("../assets/piecharttttt.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 500px;
+    width: 100%;
+}
+
+#infomercial {
+    width: 100%;
+    height: 550px;
+}
+
+#video {
+    padding-top: 30px;
+}
+
+iframe {
+    height: 430px;
+    width: 90%;
+}
 }
 
 </style>
